@@ -10,10 +10,9 @@ def Tanimoto_distance(prefs,person1,person2):
             si[item]=1
             if prefs[person1][item]==prefs[person2][item]:
                 tanimoto+=1
-                print tanimoto
 
     #none same items
     if len(si)==0:
         return 0
     else:
-        return tanimoto/(len(si)*2)
+        return tanimoto/len(si)
