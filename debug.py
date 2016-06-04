@@ -4,6 +4,7 @@ from recommendations import sim_pearson
 from recommendations import topMatches
 from recommendations import getRecommendations
 from Tanimoto import Tanimoto_distance
+from recommendation_efficiency import recommendation_efficiency
 
 # print sim_distance(critics,'Lisa Rose','Gene Seymour')
 # print sim_pearson(critics,'Lisa Rose','Gene Seymour')
@@ -26,3 +27,4 @@ from Tanimoto import Tanimoto_distance
 # print pydelicious.get_popular(tag='programming')
 
 print Tanimoto_distance(critics,'Lisa Rose','Gene Seymour')
+print recommendation_efficiency(critics,'Toby')
